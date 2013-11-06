@@ -1,3 +1,12 @@
+// Responsive media queries
+@mq-global:      "all";
+@mq-mobile-only: "(max-width: 740px)";
+@mq-tablet:      ~"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)";
+@mq-tablet-only: ~"(min-width: 740px) and (min-device-width: 740px) and (max-width: 980px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)";
+@mq-normal:      ~"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)";
+@mq-normal-only: ~"(min-width: 980px) and (min-device-width: 980px) and (max-width: 1220px), (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)";
+@mq-wide:        ~"all and (min-width: 1220px)";
+
 // Grayscale
 @grey-10: darken(#fff, 10%);
 @grey-20: darken(#fff, 20%);
