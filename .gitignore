@@ -3,3 +3,5 @@ Thumb.db
 
 .idea
 *.iml
+
+.vagrant
