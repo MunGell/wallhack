@@ -13,8 +13,7 @@
   .grid-mobile-calc(@index, @list: "") when (@index = 0) and (@type = "full") {
     @{list} {
       float: left;
-      position: relative;
-      padding: 0 15px;
+      padding: 0 @grid-column-padding;
       .box-sizing(border-box);
     }
   }
@@ -154,16 +153,16 @@
   .grid-offset(@grid-columns);
 
   .grid-container{
-    width: 720px;
+    width: @grid-tablet-breakpoint;
   }
 }
 @media @mq-normal {
   .grid-container{
-    width: 960px;
+    width: @grid-normal-breakpoint;
   }
 }
 @media @mq-wide {
   .grid-container{
-    width: 1200px;
+    width: @grid-wide-breakpoint;
   }
 }
