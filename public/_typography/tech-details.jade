@@ -1,0 +1,27 @@
+.hspace100
+.content.river
+    div#tech.grid-container.clearfix
+        != partial("../_shared/back-to-top")
+    .hspace40
+    div.grid-container.clearfix
+        .col-1of1
+            h2.head28 A Few Tech Details
+        .col-1of2.nomargin-bottom
+            p.text16
+                | Source Sans Pro is <b>smaller when compared</b> (pixel to pixel) to other webfonts. Text and headline <b>sizes have been adjusted</b> (up) in the CSS to <u>visually</u> appear equal in height to Arial<span class="hide-small"> (Fig. 1)</span>. Time was taken to figure out sizes from 9px to 100px.
+            .hspace40
+            h3.head18 Other Useful Information
+            ul.text12
+                li Source Sans Pro is used for headlines and body copy.
+                li The CSS references WOFF, EOT, TTF formats directly from Google with local versions as backup. SVG format (if needed) is still served locally.
+                li All font sizes are in REMs (root ems) with their sizing relative to the base 16px/100% browser default. Pixel assignments are provided for older browsers.
+        .col-1of2.last
+            .clearfix.hide-small
+                .margin-bottom5
+                    h6.label
+                        | <span style="font-size:125%;">FIG1:</span> Arial <span style="font-family:Arial;color:#5ABEFF;">(blue)</span> and Source Sans Pro at 90px
+                .block(style="background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAGklEQVR42kXEIQEAAADCsEejf6mDY2JMUHkFS8wJOP2Bs74AAAAASUVORK5CYII=') repeat scroll 0 0 transparent;")
+                    h6.nomargin.center(style="font-size:90px;")
+                        | <span style="font-family:Arial;font-size:90px;color:#5ABEFF;">A</span>A <span style="font-family:Arial;font-size:90px;color:#5ABEFF;">A</span><span class="head90">A</span>
+            p.text10 Above shows Arial compared to Sources Sans Pro <strong>before</strong> and <strong>after</strong> the size adjustment.
+    .hspace60
