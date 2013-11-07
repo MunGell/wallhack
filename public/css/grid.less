@@ -13,13 +13,13 @@
   .grid-mobile-calc(@index, @list: "") when (@index = 0) and (@type = "full") {
     @{list} {
       float: left;
-      padding: 0 @grid-column-padding;
-      .box-sizing(border-box);
     }
   }
   .grid-mobile-calc(@index, @list: "") when (@index = 0) and (@type = "mobile")  {
     @{list} {
       position: relative;
+      padding: 0 @grid-column-padding;
+      .box-sizing(border-box);
     }
   }
   .grid-mobile-calc(@grid-columns);
