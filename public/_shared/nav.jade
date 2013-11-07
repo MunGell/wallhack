@@ -1,14 +1,13 @@
 div#top.eyebrow.drop-shadow
     div.grid-container.clearfix
-        div.eyebrow-nav
-            div.logo
-                div.cornerstone-icon.inline-block
-            ul
-                li.current
-                    a(href="./typography.html") Type
-                li
-                    a(href="./grid.html") Grid
-                li
-                    a(href="./colors.html") Colors
-                li
-                    a(href="./components.html") Components
+        div.eyebrow-nav.grid-12
+            div.eyebrow-logo
+                h1 #{site_title}
+            ul.eyebrow-menu
+                for link in eyebrow
+                    if current.path[0] == link.alias 
+                        li.current
+                            a(href="./#{link.alias}.html") #{link.title}
+                    else
+                        li
+                            a(href="./#{link.alias}.html") #{link.title}

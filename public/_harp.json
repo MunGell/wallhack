@@ -1,0 +1,23 @@
+{
+	"globals": {
+		"site_title": "Wallhack",
+		"eyebrow": [
+			{
+				"alias": "typography",
+				"title": "Typography"
+			},
+			{
+				"alias": "grid",
+				"title": "Grid"
+			},
+			{
+				"alias": "colors",
+				"title": "Colors"
+			},
+			{
+				"alias": "components",
+				"title": "Components"
+			}
+		]
+	}
+}
