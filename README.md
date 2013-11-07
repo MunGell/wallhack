@@ -6,7 +6,7 @@ HarpJS application to house custom CSS framework
 
 1. [Install HarpJS](http://harpjs.com/docs/quick-start)
 2. Checkout this repo
-3. Run `harp server`
+3. Run `harp server public`
 
 ## Container setup
 
@@ -23,4 +23,4 @@ HarpJS application to house custom CSS framework
 
 1. `sudo docker run -i -t -p 49000:9000 -v /vagrant/:/mnt/wallhack:rw wallhack /bin/bash`
 2. Navigate to `/mnt/wallhack`
-3. `harp server`
+3. `harp server public`
