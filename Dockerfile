@@ -4,5 +4,7 @@ RUN rpm -Uvh http://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/epel-rele
 RUN rpm -Uvh http://dl.iuscommunity.org/pub/ius/stable/CentOS/6/x86_64/ius-release-1.0-11.ius.centos6.noarch.rpm
 RUN yum install git npm -y
 RUN npm install harp -g
+CMD ["server", "/mnt/wallhack/public"]
+ENTRYPOINT ["harp"]
 EXPOSE 9000
 VOLUME ["/mnt/wallhack", "/vagrant/wallhack"]

@@ -15,12 +15,26 @@ HarpJS application to house custom CSS framework
 3. `vagrant up` (Will take a cople of minutes to boot first time)
 4. `vagrant ssh`
 5. Navigate to `/vagrant` (should map to cloned repo directory)
-6. `sudo docker build -t="wallhack" .`
+6. `sudo docker build -t wallhack .`
 
 ## Container usage
 
 *From within Vagrant Box*
 
-1. `sudo docker run -i -t -p 49000:9000 -v /vagrant/:/mnt/wallhack:rw wallhack /bin/bash`
-2. Navigate to `/mnt/wallhack`
-3. `harp server public`
+### Interactive Mode (Bash)
+
+```bash
+sudo docker run -i -t -p 49000:9000 -v /vagrant/:/mnt/wallhack:rw wallhack /bin/bash
+```
+    
+### Interactive Mode (Harp)
+
+```bash
+sudo docker run -i -t -p 49000:9000 -v /vagrant/:/mnt/wallhack:rw wallhack compile /mnt/wallhack/public
+```
+
+### Daemon Mode (Server)
+
+```bash
+sudo docker run -d -p 49000:9000 -v /vagrant/:/mnt/wallhack:rw wallhack
+```
