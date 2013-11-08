@@ -1,0 +1,46 @@
+#modifiers.tabcontentcontainer
+    .hspace20
+    .col-1of1
+        p.text16 Text styling can easily be added or subtracted using modifier classes. We've tried to keep them short and easy to remember (or guess) using plain words.
+    .hspace40
+    .clearfix
+        .well
+            - var counter = 0, lastColumnClass = "", upperCaseModifier = "", lastColumn = false, modifierWithDot = ""
+            each modifier in ["ultra", "heavy", "semibold", "regular", "lite", "extralite", "strong", "mute", "shadow", "center", "white", "caps", "loose", "looser", "loosest"]
+                - counter++
+                - lastColumnClass = counter%3 == 0 ? "last nomargin-bottom" : ""
+                div(class="col-1of3 #{ lastColumnClass }")
+                    - upperCaseModifier = modifier.charAt(0).toUpperCase() + modifier.slice(1)
+                    h6.label
+                        span.highlight.gray head30
+                        span.highlight.green #{ modifier }
+                    h3(class="head30 #{ modifier }") #{ upperCaseModifier }
+    .hspace60
+    .col-1of1
+        h3.head18 Other Ways to Flavor Text:
+    .hspace20
+    - counter = 0
+    each modifier in ["", "green", "orange", "yellow", "pink", "black", "gray", "litegray"]
+        - counter++
+        - var lastColumn = (counter%4 == 0);
+        - var lastColumnClass = lastColumn ? "last" : ""
+        - var modifierWithDot = modifier.length > 0 ? "." + modifier : ""
+        div(class="col-1of4 #{ lastColumnClass }")
+            p.text14
+                span(class="highlight #{ modifier }") .highlight #{ modifierWithDot }
+        if lastColumn
+            .hspace40
+        else
+
+    .col-1of4
+        p.text14
+            span.callout .callout
+    .col-1of4
+        p.text14
+            code .code
+    .col-1of4
+        p.text14
+            span.bold .bold
+    .col-1of4.last
+        p.text14
+            span.black .black

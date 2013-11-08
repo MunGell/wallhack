@@ -8,15 +8,15 @@
             li
                 | Default font weight is <b>Source Sans Pro Light</b>. Weights can be overridden by adding <span class="callout"><code>&#8220;ultra&#8221;</code></span>&#8195;<span class="callout"><code>&#8220;heavy&#8221;</code></span>&#8195;<span class="callout"><code>&#8220;semibold&#8221;</code></span>&#8195;<span class="callout"><code>&#8220;regular&#8221;</code></span>&#8195;<span class="callout"><code>&#8220;lite&#8221;</code></span>&#8195;<span class="callout"><code>&#8220;extralite&#8221;</code></span> classes.
             li As the font size gets smaller, the font weight increases to maintain readability
-- var exampleText = 'There once was a font that was hard working and honest. Each morning it awoke before the rooster to get to work making words and sentences for websites. It did a great job and was adored by everyone.'
-- for (var x = 24; x >= 12; x=x-2)
-    - var y = x-2
-    .hspace60
-    .col-1of2
-        h6.label.double
-            span.highlight.ltgray #{ 'text' + x }
-        p(class="text#{ x }") #{ exampleText }
-    .col-1of2.last
-        h6.label.double
-            span.highlight.ltgray #{ 'text' + y }
-        p(class="text#{ y }") #{ exampleText }
+    - var exampleText = 'There once was a font that was hard working and honest. Each morning it awoke before the rooster to get to work making words and sentences for websites. It did a great job and was adored by everyone.'
+    - for (var x = 24; x >= 12; x=x-2)
+        - var y = x-2
+        .hspace60
+        .col-1of2
+            h6.label.double
+                span.highlight.ltgray #{ 'text' + x }
+            p(class="text#{ x }") #{ exampleText }
+        .col-1of2.last
+            h6.label.double
+                span.highlight.ltgray #{ 'text' + y }
+            p(class="text#{ y }") #{ exampleText }
