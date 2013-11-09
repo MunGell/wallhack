@@ -1,0 +1,6 @@
+div.subnav
+    div.grid-container
+        ul.subnav-menu
+            for item in menu
+                li.subnav-menu-item
+                    a(href="#{item.url}")= item.title
