@@ -1,1 +1,17 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
+
+.font-size(@rem) {
+  font-size: @font-size-base * @rem;
+  font-size: @rem;
+}
+
+html, body {
+  font-family: @font-family-base;
+
+  @media @mq-mobile {
+    font-size: 0.75 * @font-size-base;
+  }
+  @media @mq-normal {
+    font-size: @font-size-base;
+  }
+}
