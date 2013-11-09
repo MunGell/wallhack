@@ -1,0 +1,39 @@
+!= partial("_shared/nav")
+!= partial("_shared/hero", { title: "Grid" })
+
+div.grid-container
+    h3 Responsive grid system
+    p
+        | Grid helps developers to build responsive layouts with less efforts providing column-based responsive blocks.
+        | Conrnerstone implementation of the responsive grid system is very flexible and makes it simple to adjust grid to custom needs.
+        | The number of columns could be changes in <code>_variables.less</code> file as well as gutter and grid breakpoint sizes.
+        | By default grid consists of 12 columns which will stack into one column on mobile screen size (less than 720px) with 30px gutter.
+        | This text needs editor to make it clean and tidy.
+    div.grid-row.grid-presentation
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+        div.grid-1 .grid-1
+    div.grid-row.grid-presentation
+        div.grid-2 .grid-2
+        div.grid-2 .grid-2
+        div.grid-2 .grid-2
+        div.grid-2 .grid-2
+        div.grid-2 .grid-2
+        div.grid-2 .grid-2
+    div.grid-row.grid-presentation
+        div.grid-2 .grid-2
+        div.grid-4 .grid-4
+        div.grid-6 .grid-6
+    div.grid-row.grid-presentation
+        div.grid-12 .grid-12
+
+    p The actual width of content that is allowed inside a column is 30px less due to gutter padding.
