@@ -1,0 +1,133 @@
+.hspace80
+hr
+.content
+    .container.clearfix
+        != partial("../_shared/back-to-top")
+#lists.hspace80
+.content
+    .container.clearfix
+        .col-1of1
+            h2.head28 What Lists Look Like
+            p.text16 Have you ever had a few short points to make, but didn&#8217;t want bury them in a massive paragraph? Then try an ordered or unordered list!
+.hspace30
+.content
+    .container.clearfix
+        .tabwrap
+            ul.tabs
+                li
+                    a(href="#unordered") Unordered Lists
+                li
+                    a(href="#ordered") Ordered Lists
+                li
+                    a(href="#features") Feature Lists
+    .tab-hr
+    .container.clearfix
+        #unordered.tabcontentcontainer
+            .hspace20
+            .col-1of1
+                h3.head18 A Few Rules About Lists:
+                ul.text12
+                    li A list needs to have at least two bullet points/sub-bullets. If you only have a single bullet point, find another way to display your content.
+                    li Be consistent. Write all your bullet points as a sentence or a fragment. Pick one and stick with it.
+            .hspace60
+            .col-1of2
+                mixin unorderedList(size)
+                    h6.label.double
+                        span.highlight.ltgray #{ 'text' + size }
+                        span.highlight.green ul
+                    ul(class="#{ 'text' + size }")
+                        li
+                            | <strong>Sell products</strong>—This is so vague as to be meaningless and is likely to produce buzzword-infested fluff.
+                        li
+                            | <strong>Sell this product</strong>—Selling a product is a process made up of many smaller tasks, like discussing benefits, mapping them to features, demonstrating results and value, and asking people to buy. If your goal is this vague, you have no idea which of these tasks (if any) the content will perform.
+                        li
+                            | <strong>List and demonstrate the benefits of this product</strong>—This is something a chunk of content can actually do. But if you don’t know who is supposed to benefit from the product, it’s difficult to be specific.
+                            ul
+                                li Who is the product made for?
+                                li How does it help or simplify their lives?
+                                li Why would they want to buy from you?
+                        li
+                            | <strong>Show how this product helps nurse practitioners</strong>—If you can discover what nurse practitioners need, you can create content that serves this purpose. (And if you can’t find out what they need before trying to sell them a product, you have a lot more to worry about than your content.)
+                +unorderedList(16)
+            .col-1of2.last
+                +unorderedList(14)
+            .hspace60
+            .col-1of2
+                +unorderedList(12)
+            .col-1of2.last.blank
+        #ordered.tabcontentcontainer
+            .hspace20
+            .col-1of1
+                h3.head18 A Few Rules About Lists:
+                ul.text12
+                    li A list needs to have at least two bullet points/sub-bullets. If you only have a single bullet point, find another way to display your content.
+                    li Be consistent. Write all your bullet points as a sentence or a fragment. Pick one and stick with it.
+            .hspace60
+            .col-1of2
+                mixin orderedList(size)
+                    h6.label.double
+                        span.highlight.ltgray #{ 'text' + size }
+                        span.highlight.green ol
+                    ol(class="#{ 'text' + size }")
+                        li Check under all rocks and look down each gutter or pipe. Pay particular attention to knot holes in trees and any dark area where growling is heard.
+                        li Mark each spot where you have checked with chalk—being sure it is conspicuous.
+                        li Collect what you have found in a large woven reed basket.
+                            ol
+                                li Be sure to tag each object with where it was found.
+                                    ol
+                                        li This was found under a rock.
+                                        li An elf appeared and gave this to me.
+                                        li I was lead to this by a voice from the sky.
+                                li Wrap each object in plastic.
+                                li Stack neatly in basket.
+                        li Mark your basket(s) with your name and date.
+                        li Return your collection of stuff to home base at the end of each day.
+                        li You will never be thanked or paid for your work.
+                +orderedList(16)
+            .col-1of2.last
+                +orderedList(14)
+            .hspace60
+            .col-1of2
+                +orderedList(12)
+            .col-1of2.last.blank
+        #features.tabcontentcontainer
+            .hspace20
+            .col-1of1
+                p.text16
+                    strong Feature Lists
+                    |  usually follow a brief paragraph, sentence, or a heading. As the name implies, they are usually short, pointed benefits of a product or service.
+            .hspace40
+            .col-1of2
+                h6.label.double
+                    span.highlight.ltgray text16
+                    span.highlight.green ul class="features-list"
+                h6.head20 Cloud Files Offers:
+                ul.features-list.text16
+                    li Highly scalable, redundant online storage
+                    li Built with OpenStack technology
+                    li No long-term contracts
+                    li Programmatic access through RESTful APIs
+            .col-1of2.last
+                h6.label.double
+                    span.highlight.ltgray text14
+                    span.highlight.green ul class="features-list"
+                h6.head20 Speedy delivery of your data
+                p.text14 Rackspace Cloud Databases provides fast, scalable, fully managed hosting for your MySQL instances.
+                .hspace20
+                ul.features-list.text14
+                    li Eliminates the performance bottlenecks of traditional hardware virtualization
+                    li Uses SAN storage with built-in data replication, for lightning-fast speed and rock-solid reliability
+            .hspace40
+            .col-1of2
+                h6.label.double
+                    span.highlight.ltgray text12
+                    span.highlight.green ul class="features-list"
+                p.text12 Our products make it simple for you to tackle complex problems while delivering high performance.
+                .hspace20
+                ul.features-list.text12
+                    li Linux and Windows servers with persistent local hard drives and optional managed services
+                    li MySQL&reg; Cloud Databases with 229% faster performance than RDS
+                    li High-performance SSD Block Storage, and Cloud Files storage with CDN for fast global delivery of content
+                    li Software-defined networks for network isolation, performing packet filtering, and supporting broadcast/multicast
+            .col-1of2.last.blank
+.hspace100
