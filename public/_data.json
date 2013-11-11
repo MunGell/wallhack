@@ -4,11 +4,11 @@
         "title": "Typography",
         "size_chart": {
             "tabledata": {
-                "headlines" : [
+                "Headlines" : [
                     ["head100", "6.82em", 109.117, "-0.04em", 1],
                     ["head95", "6.5em", 104, "-0.04em", 1]
                 ],
-                "text" : [
+                "Text" : [
                     ["text24", "1.64em", 26.2333, "-0.02em", 1.38],
                     ["text22", "1.5em", 24, "-0.02em", 1.38]
                 ]
