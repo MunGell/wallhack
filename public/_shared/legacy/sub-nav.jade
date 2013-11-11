@@ -1,0 +1,12 @@
+.hspace100
+hr.noborder-bottom
+.sticky-element
+    .subnav
+        .container.clearfix
+            .subnav-nav
+                ul
+                    each label, href in subnav
+                        li
+                            a(href="${ href }")= label
+
+                    li

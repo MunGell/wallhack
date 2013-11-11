@@ -1,0 +1,29 @@
+#size-chart.tabcontentcontainer
+    .hspace20
+    .col-1of1
+        p.text16 Below is a list of conversions made to make Source Sans Pro <u>visually similar</u> in size to Arial. <span class="strong">Note:</span> all em/rem sizing is relative to a 16px base font size.</p>
+    each tableset in size_chart.tabledata
+        .hspace40
+        .col-1of1
+            table
+                thead
+                    tr
+                        td(colspan="4") Source Sans Pro Size Headlines
+                tbody
+                    tr
+                        th Class
+                        th Font-size
+                        th Letter-spacing
+                        th Line-height
+                    each sizeset in tableset
+                        tr
+                            td
+                                span(class="callout")
+                                    code= '.' + sizeset[0]
+                            td
+                                span(class="strong") #{ sizeset[1] }
+                                |  (#{ sizeset[2] + 'px' })
+                            td #{ sizeset[3] }
+                            td
+                                span #{ (sizeset[4] * 100) + '%' }
+                                |  (#{ (sizeset[2] * sizeset[4]).toFixed(2) })

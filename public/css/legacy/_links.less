@@ -8,34 +8,39 @@ a {
   font-style: normal;
   font-weight: normal;
 }
+
 a:link, a:visited {
   color: #4C4C4C;
   text-decoration: underline;
 }
+
 a:link.strong, a:visited.strong {
   color: inherit;
   font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   letter-spacing: 0;
 }
+
 a:hover, a:active, a:hover.strong, a:active.strong {
   color: #1E82D7;
   text-decoration: underline;
 }
+
 a:link.white, a:visited.white {
   color: #FFFFFF !important;
 }
+
 a:hover.white, a:active.white {
   color: #FFFFFF !important;
   text-decoration: underline !important;
 }
-
 
 /* LINKS FOLLOWING THINGS (with Arrow after) */
 a.follow-link {
   position: relative;
   text-decoration: underline;
 }
+
 a.follow-link.text12:before,
 a.follow-link.text14:before,
 a.follow-link.text16:before,
@@ -50,6 +55,7 @@ a.follow-link.text18:before {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 a.follow-link.text12:after,
 a.follow-link.text14:after,
 a.follow-link.text16:after,
@@ -58,6 +64,7 @@ a.follow-link.text18:after {
   position: absolute;
   background: #1E82D7;
 }
+
 a.follow-link.white.text12:before,
 a.follow-link.white.text14:before,
 a.follow-link.white.text16:before,
@@ -65,36 +72,42 @@ a.follow-link.white.text18:before {
   border: solid #FFFFFF;
   border-width: 0 2px 2px 0;
 }
+
 a.follow-link.white.text12:after,
 a.follow-link.white.text14:after,
 a.follow-link.white.text16:after,
 a.follow-link.white.text18:after {
   background: #FFFFFF !important;
 }
+
 a.follow-link.text12:before {
   top: 6px;
   right: -12px;
   width: 4px;
   height: 4px;
 }
+
 a.follow-link.text12:after {
   top: 8px;
   right: -11px;
   width: 6px;
   height: 2px;
 }
+
 a.follow-link.text14:before {
   top: 6px;
   right: -12px;
   width: 6px;
   height: 6px;
 }
+
 a.follow-link.text14:after {
   top: 9px;
   right: -12px;
   width: 9px;
   height: 2px;
 }
+
 a.follow-link:before,
 a.follow-link.text16:before {
   top: 9px;
@@ -102,6 +115,7 @@ a.follow-link.text16:before {
   width: 6px;
   height: 6px;
 }
+
 a.follow-link:after,
 a.follow-link.text16:after {
   top: 12px;
@@ -110,11 +124,11 @@ a.follow-link.text16:after {
   height: 2px;
 }
 
-
 /* LINKS THAT LEAVE SITE (with N.E. Arrow after) */
 a.follow-link-out {
   position: relative;
 }
+
 a.follow-link-out:before {
   content: "";
   position: absolute;
@@ -125,6 +139,7 @@ a.follow-link-out:before {
   width: 7px;
   height: 7px;
 }
+
 a.follow-link-out:after {
   content: "";
   position: absolute;
@@ -139,9 +154,11 @@ a.follow-link-out:after {
   width: 10px;
   height: 2px;
 }
+
 a.follow-link-out.white:before {
   border: solid #FFFFFF;
 }
+
 a.follow-link-out.white:after {
   background-color: #FFFFFF;
 }

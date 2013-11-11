@@ -1,14 +1,16 @@
-.grid-container.clearfix
-    != partial("../_shared/back-to-top")
+.content
+    .container.clearfix
+        != partial("../_shared/back-to-top")
 div#type.hspace80
 .content
-    .grid-container.clearfix
+    .container.clearfix
         .col-1of1
-            .head28 How It Looks
-            p.text16 On websites, content is king and should be treated as such. Without good typographic practices, readability and comprehension could suffer—deposing the once kingly content to the level of visual noise. So, we have carefully crafted type sizing, weights, and spacing to help keep content on the throne. Long live content!
+            h2.head28 How It Looks
+            p.text16 On websites, content is king and should be treated as such. Without good typographic practices, readability and comprehension could suffer—deposing the once kingly content to the level of visual noise. So, we have carefully crafted type sizing, weights, and spacing to help keep content on the throne.
+                strong  Long live content!
 .hspace30
 .content
-    .grid-container.clearfix
+    .container.clearfix
         .tabwrap
             ul.tabs
                 li
@@ -22,8 +24,9 @@ div#type.hspace80
                 li
                     a(href="#size-chart") Size Chart
     .tab-hr
-    .grid-container.clearfix
-        != partial("how-it-looks/headline-and-text-pairings")
-        != partial("how-it-looks/headline-details")
-        != partial("how-it-looks/text-details")
+    .container.clearfix
+        != partial("how-it-looks/pairings")
+        != partial("how-it-looks/headlines")
+        != partial("how-it-looks/text")
         != partial("how-it-looks/modifiers")
+        != partial("how-it-looks/size-chart")

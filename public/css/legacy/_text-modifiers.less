@@ -3,55 +3,228 @@
 ================================================================ */
 
 /* TRANSFORMATIONS */
-.caps {text-transform:uppercase;}
-.lite {font-family: "SourceSansProLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.extralite {font-family: "SourceSansProExtraLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.narrow {font-family: "Arial Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.narrow.bold {font-family: "Arial Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:600;}
-.loose {letter-spacing: 0.025em !important;}
-.looser {letter-spacing: 0.0375em !important;}
-.loosest {letter-spacing: .075em !important;}
-.shadow {text-shadow:none;text-shadow: 0 0.035em 0.1em rgba(0, 0, 0, 0.4);}
-.white {color:#FFFFFF !important;}
-.white.mute {color: rgba(255, 255, 255, 0.6) !important;}
-.black {color:#000000 !important;}
-.mute {color: rgba(76, 76, 76, 0.5) !important;}
-.regular {font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-strong, .strong {color: #2C2C2C;font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-.semibold {font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;}
-b, .bold {font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-.heavy {font-family: "SourceSansProBold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-.ultra {font-family: "SourceSansProBlack", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-em {color:inherit;font-family:inherit;font-style:italic;font-weight:inherit;letter-spacing: 0;}
+.caps {
+  text-transform: uppercase;
+}
 
+.lite {
+  font-family: "SourceSansProLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.extralite {
+  font-family: "SourceSansProExtraLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.narrow {
+  font-family: "Arial Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.narrow.bold {
+  font-family: "Arial Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.loose {
+  letter-spacing: 0.025em !important;
+}
+
+.looser {
+  letter-spacing: 0.0375em !important;
+}
+
+.loosest {
+  letter-spacing: .075em !important;
+}
+
+.shadow {
+  text-shadow: none;
+  text-shadow: 0 0.035em 0.1em rgba(0, 0, 0, 0.4);
+}
+
+.white {
+  color: #FFFFFF !important;
+}
+
+.white.mute {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.black {
+  color: #000000 !important;
+}
+
+.mute {
+  color: rgba(76, 76, 76, 0.5) !important;
+}
+
+.regular {
+  font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+strong, .strong {
+  color: #2C2C2C;
+  font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-style: inherit;
+  font-weight: normal;
+  letter-spacing: -0.015em;
+}
+
+.semibold {
+  font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-style: inherit;
+  font-weight: normal;
+}
+
+b, .bold {
+  font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-style: inherit;
+  font-weight: normal;
+  letter-spacing: -0.015em;
+}
+
+.heavy {
+  font-family: "SourceSansProBold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-style: inherit;
+  font-weight: normal;
+  letter-spacing: -0.015em;
+}
+
+.ultra {
+  font-family: "SourceSansProBlack", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-style: inherit;
+  font-weight: normal;
+  letter-spacing: -0.015em;
+}
+
+em {
+  color: inherit;
+  font-family: inherit;
+  font-style: italic;
+  font-weight: inherit;
+  letter-spacing: 0;
+}
 
 /* KILLS LINE-HEIGHT */
-.nolineheight {line-height:100% !important;}
-
+.nolineheight {
+  line-height: 100% !important;
+}
 
 /* INCREASES DEFAULT BOTTOM MARGIN */
-p.double, ul.double, ol.double {margin:0 0 2em 0;}
-p.triple, ul.triple, ol.triple {margin:0 0 3em 0;}
-p.quadruple, ul.quadruple, ol.quadruple {margin:0 0 4em 0;}
-p.quintuple, ul.quintuple, ol.quintuple {margin:0 0 5em 0;}
-p.sextuple, ul.sextuple, ol.sextuple {margin:0 0 6em 0;}
+p.double, ul.double, ol.double {
+  margin: 0 0 2em 0;
+}
 
+p.triple, ul.triple, ol.triple {
+  margin: 0 0 3em 0;
+}
+
+p.quadruple, ul.quadruple, ol.quadruple {
+  margin: 0 0 4em 0;
+}
+
+p.quintuple, ul.quintuple, ol.quintuple {
+  margin: 0 0 5em 0;
+}
+
+p.sextuple, ul.sextuple, ol.sextuple {
+  margin: 0 0 6em 0;
+}
 
 /* HIGHLIGHTS */
-span.highlight {background-color: #8EE8FD;color: #414141;font-family: inherit;font-weight: normal;letter-spacing: 0;padding:0 0.15em 0.1em;}
-span.highlight.orange {background-color: #FFC900;color: #414141;}
-span.highlight.green {background-color: #ACFC41;color: #414141;}
-span.highlight.pink {background-color: #FFC8F6;color: #414141;}
-span.highlight.yellow {background-color: #FFFF3C;color: #414141;}
-span.highlight.gray {background-color: #C6C6C6;color: #414141;}
-span.highlight.ltgray {background-color: #E3E3E3;color: #757575;}
-span.highlight.white {background-color: #FFFFFF;color: #414141 !important;}
-span.highlight.black {background-color: #000000;color: #EEEEEE !important;}
-.label > span.highlight {padding:0 0.45em;}
+span.highlight {
+  background-color: #8EE8FD;
+  color: #414141;
+  font-family: inherit;
+  font-weight: normal;
+  letter-spacing: 0;
+  padding: 0 0.15em 0.1em;
+}
 
+span.highlight.orange {
+  background-color: #FFC900;
+  color: #414141;
+}
 
+span.highlight.green {
+  background-color: #ACFC41;
+  color: #414141;
+}
 
-.callout {background: none repeat scroll 0 0 #FFFFFF;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;border: 1px solid #C4C4C4;-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);box-shadow: 0px 1px 2px rgba(0,0,0,0.2);color: inherit;font-family: inherit;font-weight: inherit;letter-spacing: inherit;padding: 0 0.45em 0.1em;display: inline;}
-.well > .callout {background: none repeat scroll 0 0 #FFFFFF;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;border: 0 none;-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);box-shadow: 0px 1px 2px rgba(0,0,0,0.25);color: inherit;font-family: inherit;font-weight: inherit;letter-spacing: inherit;padding: 0 0.45em 0.1em;display: inline;}
-p > .callout, .well p > .callout {padding: 0 0.45em 0.1em;vertical-align: bottom;font-size: .9em;white-space: nowrap;}
-div.callout {display: block;}
+span.highlight.pink {
+  background-color: #FFC8F6;
+  color: #414141;
+}
+
+span.highlight.yellow {
+  background-color: #FFFF3C;
+  color: #414141;
+}
+
+span.highlight.gray {
+  background-color: #C6C6C6;
+  color: #414141;
+}
+
+span.highlight.ltgray {
+  background-color: #E3E3E3;
+  color: #757575;
+}
+
+span.highlight.white {
+  background-color: #FFFFFF;
+  color: #414141 !important;
+}
+
+span.highlight.black {
+  background-color: #000000;
+  color: #EEEEEE !important;
+}
+
+.label > span.highlight {
+  padding: 0 0.45em;
+}
+
+.callout {
+  background: none repeat scroll 0 0 #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #C4C4C4;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  padding: 0 0.45em 0.1em;
+  display: inline;
+}
+
+.well > .callout {
+  background: none repeat scroll 0 0 #FFFFFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 0 none;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  padding: 0 0.45em 0.1em;
+  display: inline;
+}
+
+p > .callout, .well p > .callout {
+  padding: 0 0.45em 0.1em;
+  vertical-align: bottom;
+  font-size: .9em;
+  white-space: nowrap;
+}
+
+div.callout {
+  display: block;
+}

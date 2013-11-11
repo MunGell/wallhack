@@ -5,11 +5,17 @@
     each sizeSet in [[32,18,28,16],[24,14,20,13],[18,12,16,11],[14,10,12,9]]
         .hspace40
         .col-1of2
+            h6.label
+                span.highlight.ltgray #{ 'head' + sizeSet[0] }
+                span.highlight.green #{ 'text' + sizeSet[1] }
             h3(class="head#{ sizeSet[0] }") Heading
                 span.lite  (#{ sizeSet[0] }px)
             p(class="text#{ sizeSet[1] }")
                 | There once was a <strong>#{ sizeSet[1] }px font</strong> that was hard working and honest. Each morning it awoke before the rooster to get to work making words and sentences for websites. It did a great job and was adored by everyone.
         .col-1of2.last
+            h6.label
+                span.highlight.ltgray #{ 'head' + sizeSet[2] }
+                span.highlight.green #{ 'text' + sizeSet[3] }
             h3(class="head#{ sizeSet[2] }") Heading
                 span.lite  (#{ sizeSet[2] }px)
             p(class="text#{ sizeSet[3] }")

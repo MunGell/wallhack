@@ -2,10 +2,12 @@
 	Tables: Basics
 ================================================================ */
 
-div.table-content { /* =====  makes the tables scroll-x on small screens ===== */
+div.table-content {
+  /* =====  makes the tables scroll-x on small screens ===== */
   overflow-x: auto;
   position: relative;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -13,14 +15,17 @@ table {
   position: relative;
   width: 100%;
 }
+
 thead {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
 }
+
 thead tr:first-child, thead tr:last-child {
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
 }
+
 thead td {
   border: 0 none;
   color: #4C4C4C;
@@ -31,21 +36,27 @@ thead td {
   text-align: left;
   vertical-align: middle;
 }
+
 tbody {
   background: none repeat scroll 0 0 transparent;
 }
+
 .river tbody {
   background: none repeat scroll 0 0 #FFFFFF;
 }
+
 tr:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.085);
 }
+
 tr:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.085);
 }
+
 tr:nth-child(odd) {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.08);
 }
+
 th {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.085);
   border-top: 0;
@@ -61,6 +72,7 @@ th {
   text-align: center;
   vertical-align: middle;
 }
+
 td {
   background: none repeat scroll 0 0 transparent;
   border-top: 0;
@@ -77,24 +89,26 @@ td {
 }
 
 /*--- Chrome Specific Styling --- */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   th, td {
     border-right: 1px solid rgba(0, 0, 0, 0.075);
   }
 }
+
 th:last-child, td:last-child {
   border-right: 0;
 }
+
 tbody.emphasize, tr.emphasize, th.emphasize, td.emphasize {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.075) !important;
 }
-
 
 /* ================================================================
 	Tables: Pricing
 ================================================================ */
 
-div.table-content.round-top { /* =====  makes the tables scroll-x on small screens ===== */
+div.table-content.round-top {
+  /* =====  makes the tables scroll-x on small screens ===== */
   overflow-x: auto;
   position: relative;
   -webkit-border-top-left-radius: 4px;
@@ -104,33 +118,42 @@ div.table-content.round-top { /* =====  makes the tables scroll-x on small scree
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
+
 table.pricing {
   background: none repeat scroll 0 0 transparent;
 }
+
 .pricing thead tr td {
   padding-left: 0;
 }
+
 .pricing tr {
   background: none repeat scroll 0 0 transparent;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
+
 .river .pricing tr {
   background: none repeat scroll 0 0 transparent;
   border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 }
+
 .river .pricing thead tr {
   background: none repeat scroll 0 0 transparent;
   border-bottom: 0;
 }
+
 .pricing tr:first-child {
   border-top: 0 none;
 }
+
 .pricing tr:first-child:hover {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.0);
 }
+
 .pricing tr:hover {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.02);
 }
+
 table.pricing tbody {
   background: none repeat scroll 0 0 transparent;
   -webkit-border-top-left-radius: 4px;
@@ -140,9 +163,11 @@ table.pricing tbody {
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
+
 .river table.pricing tbody {
   background: none repeat scroll 0 0 transparent;
 }
+
 .river .pricing tr.product-head {
   border-top: 0 none;
   -webkit-border-radius: 4px 4px 0 0;
@@ -150,79 +175,97 @@ table.pricing tbody {
   border-radius: 4px 4px 0 0;
   background: none repeat scroll 0 0 transparent;
 }
+
 .pricing tr.thick-border {
   border-bottom: 5px solid rgba(0, 0, 0, 0.15);
 }
+
 .pricing th {
   background: none repeat scroll 0 0 transparent;
   border-right-width: 2px;
 }
-.pricing tr.product-head th,.pricing tr.product-head td {
+
+.pricing tr.product-head th, .pricing tr.product-head td {
   padding: 1.2em 0.5em 1em;
 }
+
 .pricing tr.product-head th.first {
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px;
 }
+
 .pricing tr.product-head th.last {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
 }
+
 .pricing tr.product-head td:first-child {
   border-right: 0 none;
 }
+
 .pricing td {
   border-right: 2px solid rgba(0, 0, 0, 0.1);
 }
+
 .river .pricing td {
   border-right: 2px solid rgba(0, 0, 0, 0.25);
 }
+
 .pricing td strong.monthly {
-  color:#010101;
+  color: #010101;
   font-size: 1.05em;
   line-height: 120%;
 }
+
 .pricing td:first-child {
   text-align: left;
 }
+
 .pricing td:last-child {
   border-right: 0 none;
 }
+
 .pricing td.strong {
   color: #2C2C2C;
   font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   letter-spacing: 0;
 }
+
 .pricing td.strong.big {
   font-size: .875em;
 }
+
 .pricing th.blue {
   background: none repeat scroll 0 0 #288CE1;
   color: #FFFFFF;
-  text-shadow:none;
+  text-shadow: none;
   text-shadow: 0 .05em .05em rgba(0, 0, 0, 0.4);
 }
+
 .pricing th.orange {
   background: none repeat scroll 0 0 #FF9600;
   color: #FFFFFF;
-  text-shadow:none;
+  text-shadow: none;
   text-shadow: 0 .05em .05em rgba(0, 0, 0, 0.4);
 }
+
 .pricing th.green {
   background: none repeat scroll 0 0 #6EBE3C;
   color: #FFFFFF;
-  text-shadow:none;
+  text-shadow: none;
   text-shadow: 0 .05em .05em rgba(0, 0, 0, 0.4);
 }
+
 .pricing th.purple {
   background: none repeat scroll 0 0 #A66ED3;
   color: #FFFFFF;
-  text-shadow:none;
+  text-shadow: none;
   text-shadow: 0 .05em .05em rgba(0, 0, 0, 0.4);
 }
+
 tbody.emphasize.orange, tr.emphasize.orange, th.emphasize.orange, td.emphasize.orange {
   background: none repeat scroll 0 0 rgba(255, 150, 0, 0.6) !important;
 }

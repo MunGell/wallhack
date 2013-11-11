@@ -20,13 +20,12 @@ span.footnote-tip {
   text-decoration: none;
 }
 
-
 /* INFORMATION ICON â€” <span class="information-icon"> */
 span.information-icon {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAM0lEQVR42r3RsQkAAAgDQfdfygXcKWIhWCagCl8eKTQAUmvAqzvQx4Lo6IVzEDP5D/8gAc93tCZo812lAAAAAElFTkSuQmCC');
-  background-attachment:scroll;
-  background-position:50% 50%;
-  background-repeat:no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   background-color: #1E82D7;
   position: relative;
   -webkit-border-radius: 7px;
@@ -44,33 +43,42 @@ span.information-icon {
   margin: 0;
   vertical-align: text-top;
 }
+
 span.information-icon.black {
   background-color: #000000;
 }
+
 span.information-icon.gray {
   background-color: #959595;
 }
+
 span.information-icon.white {
   background-color: #FFFFFF;
 }
+
 span.information-icon.white:after {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAANElEQVR42r3RsQ0AAAREUfsvZQE7neaIkgiSn2heFATAqD3gKLsBuXeBRe0L58Bq4z/8Awe1ymxuSdq/KQAAAABJRU5ErkJggg==');
-  background-attachment:scroll;
-  background-position:50% 50%;
-  background-repeat:no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
+
 span.information-icon:hover, span.footnote-tip:hover {
   cursor: default;
 }
+
 span.information-icon:hover .tipbox, span.information-icon:hover .tipbox:before, span.footnote-tip:hover .tipbox, span.footnote-tip:hover .tipbox:before, span.information-icon:active .tipbox, span.information-icon:active .tipbox:before, span.footnote-tip:active .tipbox, span.footnote-tip:active .tipbox:before {
   display: block;
 }
+
 span.information-icon.left {
   margin: 0 4px 0 0;
 }
+
 span.information-icon.right {
   margin: 0 0 0 4px;
 }
+
 /* small version */
 span.information-icon.small {
   -webkit-border-radius: 6px;
@@ -96,14 +104,15 @@ span.information-icon.small {
   bottom: -10px;
   width: 0;
 }
+
 .tipbox {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -117,14 +126,17 @@ span.information-icon.small {
   z-index: 1000;
   margin: 0 auto;
 }
+
 span.information-icon.small .tipbox {
   left: -19px;
   bottom: 18px;
 }
+
 span.footnote-tip .tipbox {
   left: -22px;
   bottom: 1.5em;
 }
+
 .tipbox .tipcontent {
   display: block;
   text-align: left;
@@ -137,6 +149,7 @@ span.footnote-tip .tipbox {
   white-space: nowrap;
   word-wrap: normal;
 }
+
 .tipbox .tipcontent span {
   margin: 0 0 .25em;
   line-height: 125%;
@@ -146,7 +159,6 @@ span.footnote-tip .tipbox {
   display: block;
 }
 
-
 /* ----------------------------------------------------------------
 	Tooltips (on hover): Colors
 ---------------------------------------------------------------- */
@@ -154,37 +166,48 @@ span.footnote-tip .tipbox {
 .tipbox.red {
   background: none repeat scroll 0 0 #EE0022;
 }
+
 .tipbox.red:before {
   border-color: #EE0022 transparent transparent;
 }
+
 .tipbox.blue {
   background: none repeat scroll 0 0 #1E82D7;
 }
+
 .tipbox.blue:before {
   border-color: #1E82D7 transparent transparent;
 }
+
 .tipbox.green {
   background: none repeat scroll 0 0 #5AAA28;
 }
+
 .tipbox.green:before {
   border-color: #5AAA28 transparent transparent;
 }
+
 .tipbox.orange {
   background: none repeat scroll 0 0 #FF9600;
 }
+
 .tipbox.orange:before {
   border-color: #FF9600 transparent transparent;
 }
+
 .tipbox.gray {
   background: none repeat scroll 0 0 #919191;
 }
+
 .tipbox.gray:before {
   border-color: #919191 transparent transparent;
 }
+
 .tipbox.white {
   background: none repeat scroll 0 0 #FFFFFF;
   color: #4C4C4C !important;
 }
+
 .tipbox.white:before {
   border-color: #FFFFFF transparent transparent;
 }

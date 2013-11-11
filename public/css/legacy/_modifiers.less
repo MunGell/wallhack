@@ -1,57 +1,492 @@
 /* ================================================================
-	TEXT: Modifiers
-================================================================ */
+    OTHER MODIFIERS
+================================================================-*/
 
-/* TRANSFORMATIONS */
-.caps {text-transform:uppercase;}
-.lite {font-family: "SourceSansProLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.extralite {font-family: "SourceSansProExtraLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.narrow {font-family: "Arial Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.narrow.bold {font-family: "Arial Narrow", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:600;}
-.loose {letter-spacing: 0.025em !important;}
-.looser {letter-spacing: 0.0375em !important;}
-.loosest {letter-spacing: .075em !important;}
-.shadow {text-shadow:none;text-shadow: 0 0.035em 0.1em rgba(0, 0, 0, 0.4);}
-.white {color:#FFFFFF !important;}
-.white.mute {color: rgba(255, 255, 255, 0.6) !important;}
-.black {color:#000000 !important;}
-.mute {color: rgba(76, 76, 76, 0.5) !important;}
-.regular {font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;}
-strong, .strong {color: #2C2C2C;font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-.semibold {font-family: "SourceSansProSemibold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;}
-b, .bold {font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-.heavy {font-family: "SourceSansProBold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-.ultra {font-family: "SourceSansProBlack", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-style: inherit;font-weight: normal;letter-spacing: -0.015em;}
-em {color:inherit;font-family:inherit;font-style:italic;font-weight:inherit;letter-spacing: 0;}
+/* CORNER ROUNDER OUTTERS */
+.round10 {
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
+.round8 {
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  border-radius: 8px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
-/* KILLS LINE-HEIGHT */
-.nolineheight {line-height:100% !important;}
+.round6 {
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  border-radius: 6px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
+.round5 {
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
-/* INCREASES DEFAULT BOTTOM MARGIN */
-p.double, ul.double, ol.double {margin:0 0 2em 0;}
-p.triple, ul.triple, ol.triple {margin:0 0 3em 0;}
-p.quadruple, ul.quadruple, ol.quadruple {margin:0 0 4em 0;}
-p.quintuple, ul.quintuple, ol.quintuple {margin:0 0 5em 0;}
-p.sextuple, ul.sextuple, ol.sextuple {margin:0 0 6em 0;}
+.round4 {
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  border-radius: 4px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
+.round3 {
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
-/* HIGHLIGHTS */
-span.highlight {background-color: #8EE8FD;color: #414141;font-family: inherit;font-weight: normal;letter-spacing: 0;padding:0 0.15em 0.1em;}
-span.highlight.orange {background-color: #FFC900;color: #414141;}
-span.highlight.green {background-color: #ACFC41;color: #414141;}
-span.highlight.pink {background-color: #FFC8F6;color: #414141;}
-span.highlight.yellow {background-color: #FFFF3C;color: #414141;}
-span.highlight.gray {background-color: #C6C6C6;color: #414141;}
-span.highlight.ltgray {background-color: #E3E3E3;color: #757575;}
-span.highlight.white {background-color: #FFFFFF;color: #414141 !important;}
-span.highlight.black {background-color: #000000;color: #EEEEEE !important;}
-.label > span.highlight {padding:0 0.45em;}
+.round2 {
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
 
+/* DIV ELEMENTS */
+div.divcenter {
+  position: relative !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
+div.blank {
+  content: "\00a0";
+  height: 1px;
+  visibility: hidden;
+}
 
-.callout {background: none repeat scroll 0 0 #FFFFFF;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;border: 1px solid #C4C4C4;-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.2);box-shadow: 0px 1px 2px rgba(0,0,0,0.2);color: inherit;font-family: inherit;font-weight: inherit;letter-spacing: inherit;padding: 0 0.45em 0.1em;display: inline;}
-.well > .callout {background: none repeat scroll 0 0 #FFFFFF;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;border: 0 none;-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.25);box-shadow: 0px 1px 2px rgba(0,0,0,0.25);color: inherit;font-family: inherit;font-weight: inherit;letter-spacing: inherit;padding: 0 0.45em 0.1em;display: inline;}
-p > .callout, .well p > .callout {padding: 0 0.45em 0.1em;vertical-align: bottom;font-size: .9em;white-space: nowrap;}
-div.callout {display: block;}
+div.emptydiv {
+  display: block !important;
+  position: relative !important;
+}
+
+/* UL / LI ELEMENTS */
+ol.enclosure, ul.enclosure, li.enclosure, ol li.enclosure, ul li.enclosure, ol li ol li.enclosure, ul li ul li.enclosure, ol li ol li ol li.enclosure, ul li ul li ul li.enclosure, ol li li.enclosure, ul li li.enclosure, ul li ol li.enclosure, ol li ul li.enclosure {
+  line-height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  position: relative;
+  vertical-align: top;
+}
+
+ol.nobullet, ul.nobullet, li.nobullet, ol li.nobullet, ul li.nobullet, ol li ol li.nobullet, ul li ul li.nobullet, ol li ol li ol li.nobullet, ul li ul li ul li.nobullet, ol li li.nobullet, ul li li.nobullet, ul li ol li.nobullet, ol li ul li.nobullet {
+  line-height: 110%;
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+/* MAKES A LINE */
+.line {
+  clear: both;
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  border-top: 1px solid #E4E4E4;
+}
+
+/* ADDING MARGINS TO SIDES */
+.margin-top5 {
+  margin-top: 5px !important;
+}
+
+.margin-top10 {
+  margin-top: 10px !important;
+}
+
+.margin-top15 {
+  margin-top: 15px !important;
+}
+
+.margin-top20 {
+  margin-top: 20px !important;
+}
+
+.margin-top25 {
+  margin-top: 25px !important;
+}
+
+.margin-top30 {
+  margin-top: 30px !important;
+}
+
+.margin-right5 {
+  margin-right: 5px !important;
+}
+
+.margin-right10 {
+  margin-right: 10px !important;
+}
+
+.margin-right15 {
+  margin-right: 15px !important;
+}
+
+.margin-right20 {
+  margin-right: 20px !important;
+}
+
+.margin-right25 {
+  margin-right: 25px !important;
+}
+
+.margin-right30 {
+  margin-right: 30px !important;
+}
+
+.margin-bottom5 {
+  margin-bottom: 5px !important;
+}
+
+.margin-bottom10 {
+  margin-bottom: 10px !important;
+}
+
+.margin-bottom15 {
+  margin-bottom: 15px !important;
+}
+
+.margin-bottom20 {
+  margin-bottom: 20px !important;
+}
+
+.margin-bottom25 {
+  margin-bottom: 25px !important;
+}
+
+.margin-bottom30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-left5 {
+  margin-left: 5px !important;
+}
+
+.margin-left10 {
+  margin-left: 10px !important;
+}
+
+.margin-left15 {
+  margin-left: 15px !important;
+}
+
+.margin-left20 {
+  margin-left: 20px !important;
+}
+
+.margin-left25 {
+  margin-left: 25px !important;
+}
+
+.margin-left30 {
+  margin-left: 30px !important;
+}
+
+/* REMOVING MARGINS ON SIDES */
+.nomargin {
+  margin: 0 !important;
+}
+
+.nomargin-left {
+  margin-left: 0 !important;
+}
+
+.nomargin-right {
+  margin-right: 0 !important;
+}
+
+.nomargin-top {
+  margin-top: 0 !important;
+}
+
+.nomargin-bottom {
+  margin-bottom: 0 !important;
+}
+
+/* REMOVING BORDERS */
+.noborder {
+  border: none !important;
+}
+
+.noborder-left {
+  border-left: none !important;
+}
+
+.noborder-right {
+  border-right: none !important;
+}
+
+.noborder-top {
+  border-top: none !important;
+}
+
+.noborder-bottom {
+  border-bottom: none !important;
+}
+
+/* ADDING PADDING TO SIDES */
+.padding-top5 {
+  padding-top: 5px !important;
+}
+
+.padding-top10 {
+  padding-top: 10px !important;
+}
+
+.padding-top15 {
+  padding-top: 15px !important;
+}
+
+.padding-top20 {
+  padding-top: 20px !important;
+}
+
+.padding-top25 {
+  padding-top: 25px !important;
+}
+
+.padding-top30 {
+  padding-top: 30px !important;
+}
+
+.padding-right5 {
+  padding-right: 5px !important;
+}
+
+.padding-right10 {
+  padding-right: 10px !important;
+}
+
+.padding-right15 {
+  padding-right: 15px !important;
+}
+
+.padding-right20 {
+  padding-right: 20px !important;
+}
+
+.padding-right25 {
+  padding-right: 25px !important;
+}
+
+.padding-right30 {
+  padding-right: 30px !important;
+}
+
+.padding-bottom5 {
+  padding-bottom: 5px !important;
+}
+
+.padding-bottom10 {
+  padding-bottom: 10px !important;
+}
+
+.padding-bottom15 {
+  padding-bottom: 15px !important;
+}
+
+.padding-bottom20 {
+  padding-bottom: 20px !important;
+}
+
+.padding-bottom25 {
+  padding-bottom: 25px !important;
+}
+
+.padding-bottom30 {
+  padding-bottom: 30px !important;
+}
+
+.padding-left5 {
+  padding-left: 5px !important;
+}
+
+.padding-left10 {
+  padding-left: 10px !important;
+}
+
+.padding-left15 {
+  padding-left: 15px !important;
+}
+
+.padding-left20 {
+  padding-left: 20px !important;
+}
+
+.padding-left25 {
+  padding-left: 25px !important;
+}
+
+.padding-left30 {
+  padding-left: 30px !important;
+}
+
+/* REMOVING PADDING ON SIDES */
+.nopadding {
+  padding: 0 !important;
+}
+
+.nopadding-left {
+  padding-left: 0 !important;
+}
+
+.nopadding-right {
+  padding-right: 0 !important;
+}
+
+.nopadding-top {
+  padding-top: 0 !important;
+}
+
+.nopadding-bottom {
+  padding-bottom: 0 !important;
+}
+
+/* ALIGNMENT OVERRIDES */
+.align-center, .center {
+  text-align: center !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.valign-top {
+  vertical-align: top !important;
+}
+
+.valign-middle {
+  vertical-align: middle !important;
+}
+
+.valign-bottom {
+  vertical-align: bottom !important;
+}
+
+.valign-text-top {
+  vertical-align: text-top !important;
+}
+
+.valign-text-bottom {
+  vertical-align: text-bottom !important;
+}
+
+.valign-baseline {
+  vertical-align: baseline !important;
+}
+
+.valign-sup {
+  vertical-align: super !important;
+}
+
+.valign-sub {
+  vertical-align: sub !important;
+}
+
+/* MAKING THINGS FLOAT */
+.floatright {
+  float: right !important;
+}
+
+.floatleft {
+  float: left !important;
+}
+
+.nofloat {
+  float: none !important;
+}
+
+/* DISPLAY OVERRIDES */
+.block {
+  display: block !important
+}
+
+.inline-block {
+  display: inline-block !important
+}
+
+.inline {
+  display: inline !important
+}
+
+.table {
+  display: table !important
+}
+
+.table-row {
+  display: table-row !important
+}
+
+.table-column {
+  display: table-column !important
+}
+
+.table-cell {
+  display: table-cell !important
+}
+
+.list-item {
+  display: list-item !important
+}
+
+.none {
+  display: none !important
+}
+
+/* POSITIONING SHORTHAND */
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+/* HIDE ELEMENTS ON LARGE SCREENS */
+.hide-big {
+  display: none;
+}
+
+/* ADDING SHADOWS */
+.inset-shadow {
+  -webkit-box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.06) inset;
+  -moz-box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.06) inset;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.25);
+}

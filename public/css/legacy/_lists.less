@@ -9,10 +9,12 @@ ol {
   font-family: inherit;
   list-style-type: decimal;
 }
+
 ul {
   font-family: inherit;
   list-style-type: disc;
 }
+
 li {
   line-height: 135%;
   margin-left: 1.2em;
@@ -20,68 +22,81 @@ li {
   margin-top: 0;
   letter-spacing: 0.0em;
 }
+
 ul li {
   list-style-type: disc;
 }
+
 ul li:first-child, ol li:first-child {
   margin-top: 0;
 }
+
 ol li {
   list-style-type: decimal;
   margin-left: 1.7em;
 }
+
 ol li ol li {
   font-size: .875em;
   list-style-type: lower-alpha;
   margin-top: .4em;
   margin-bottom: .4em;
 }
+
 ol li ol li ol li {
   font-size: .875em;
   list-style-type: decimal;
   margin-top: .4em;
   margin-bottom: .4em;
 }
+
 ul li li {
   font-size: .875em;
   list-style-type: square;
   margin-top: .4em;
   margin-bottom: .4em;
 }
+
 ul li li:last-child {
   margin-bottom: 1em;
 }
+
 ul ul, ol ul, ol ol {
   margin-bottom: 0;
   margin-top: 0.4em;
 }
+
 ol ul li {
   font-size: .875em;
   list-style-type: disc;
   margin-top: .4em;
   margin-bottom: .4em;
 }
+
 ol ul li li {
   font-size: .875em;
   list-style-type: circle;
   margin-top: .4em;
   margin-bottom: .4em;
 }
+
 li:last-child {
-  margin-bottom:0;
-  padding-bottom:0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
 .menu li {
   list-style-type: none;
 }
+
 ul.tight li, li.tight {
   line-height: 110%;
 }
+
 ul.tighter li, li.tighter {
   line-height: 100%;
   margin-bottom: 0;
 }
-
 
 /* ================================================================
 	LISTS: Features (Checkmarks before list items)
@@ -91,35 +106,42 @@ ul.features-list, ul.features-list li, ul.swatches {
   list-style-type: none;
   position: relative;
 }
+
 .features-list li, ul.features-list.text16 li {
   margin-left: 1.4em;
   line-height: 125%;
 }
+
 ul.features-list.text16 li {
   margin: 0;
   padding: 0;
   margin-bottom: 0.625em;
   margin-left: 1.6em;
 }
+
 ul.features-list.text14 li {
   margin: 0;
   padding: 0;
   margin-bottom: 0.625em;
   margin-left: 1.5em;
 }
+
 ul.features-list.text14.white li {
   margin-left: 1.6em;
 }
+
 ul.features-list.text12 li {
   margin: 0;
   padding: 0;
   margin: 0 0 0.625em 1.7em;
 }
+
 ul.features-list.text11 li {
   margin: 0;
   padding: 0;
   margin: 0 0 0.625em 1.5em;
 }
+
 ul.features-list li:after {
   content: "";
   position: absolute;
@@ -138,6 +160,7 @@ ul.features-list li:after {
   width: 4px;
   height: 11px;
 }
+
 ul.features-list.text12 li:after {
   border-width: 0 3px 3px 0;
   top: 2px;
@@ -145,6 +168,7 @@ ul.features-list.text12 li:after {
   width: 3px;
   height: 8px;
 }
+
 ul.features-list.text11 li:after {
   border-width: 0 2px 2px 0;
   top: 0;
@@ -152,6 +176,7 @@ ul.features-list.text11 li:after {
   width: 3px;
   height: 8px;
 }
+
 ul.features-list.text16 li:after {
   border-width: 0 4px 4px 0;
   top: 0px;
@@ -159,10 +184,10 @@ ul.features-list.text16 li:after {
   width: 5px;
   height: 13px;
 }
+
 ul.features-list.white li:after {
   border-color: #FFFFFF;
 }
-
 
 /* ================================================================
 	LISTS: Arrowed (Arrows before list items)
@@ -172,6 +197,7 @@ ul.arrow-list, ul.arrow-list li {
   list-style-type: none;
   position: relative;
 }
+
 ul.arrow-list li:before {
   content: "";
   position: absolute;
@@ -183,6 +209,7 @@ ul.arrow-list li:before {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 ul.arrow-list li:after,
 ul.arrow-list li:after,
 ul.arrow-list li:after,
@@ -191,37 +218,44 @@ ul.arrow-list li:after {
   position: absolute;
   background: #1E82D7;
 }
+
 ul.arrow-list.white li:before {
   border: solid #FFFFFF;
   border-width: 0 2px 2px 0;
 }
+
 ul.arrow-list.white li:after {
   background: #FFFFFF !important;
 }
+
 ul.arrow-list.text12 li:before {
   top: 7px;
   left: -13px;
   width: 4px;
   height: 4px;
 }
+
 ul.arrow-list.text12 li:after {
   top: 9px;
   left: -14px;
   width: 6px;
   height: 2px;
 }
+
 ul.arrow-list.text14 li:before {
   top: 6px;
   left: -17px;
   width: 6px;
   height: 6px;
 }
+
 ul.arrow-list.text14 li:after {
   top: 9px;
   left: -18px;
   width: 9px;
   height: 2px;
 }
+
 ul.arrow-list li:before,
 ul.arrow-list.text16 li:before {
   top: 9px;
@@ -229,6 +263,7 @@ ul.arrow-list.text16 li:before {
   width: 6px;
   height: 6px;
 }
+
 ul.arrow-list li:after,
 ul.arrow-list.text16 li:after {
   top: 12px;
