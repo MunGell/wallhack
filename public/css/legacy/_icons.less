@@ -1,0 +1,987 @@
+/* ================================================================
+	ICONS: Small (16px-ish)
+================================================================ */
+
+/* LINKS UP/DOWN PAGE â€” <span class="up-icon/down-icon"> */
+.goto-nav {
+  background-color:transparent;
+  width: 100%;
+  font-size:12px;
+  margin: 10px 0 0;
+}
+/* --- box enclosing arrow - adds line on top --- */
+span.up-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  border: solid #414141;
+  border-width: 1px 0 0 0;
+  top: 1px;
+  left: 4px;
+  width: 8px;
+  height: 9px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+/* --- use when placing the arrow icon on the left of text --- */
+span.up-icon.left {
+  margin-right: 8px;
+}
+/* --- arrow angle top --- */
+span.up-icon:before {
+  content: "";
+  position: absolute;
+  border: solid #313131;
+  border-width: 2px 2px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 2px;
+  left: 1px;
+  width: 4px;
+  height: 4px;
+}
+/* --- arrow stem --- */
+span.up-icon:after {
+  content: "";
+  position: absolute;
+  background-color: #414141;
+  top: 2px;
+  left: 3px;
+  width: 2px;
+  height: 7px;
+}
+/* --- box enclosing arrow - adds line on bottom --- */
+span.down-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  border: solid #414141;
+  border-width: 0 0 1px 0;
+  top: 2px;
+  left: 4px;
+  width: 8px;
+  height: 11px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+/* --- use when placing the arrow icon on the left of text --- */
+span.down-icon.left {
+  margin-right: 8px;
+}
+/* --- arrow angle bottom --- */
+span.down-icon:before {
+  content: "";
+  position: absolute;
+  border: solid #313131;
+  border-width: 0 0 2px 2px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 3px;
+  left: 1px;
+  width: 4px;
+  height: 4px;
+}
+/* --- arrow stem --- */
+span.down-icon:after {
+  content: "";
+  position: absolute;
+  background-color: #414141;
+  top: 2px;
+  left: 3px;
+  width: 2px;
+  height: 7px;
+}
+
+
+/* ARROW ICON â€” <span class="arrow-icon"> */
+span.arrow-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  top: -1px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+span.arrow-icon:before {
+  content: "";
+  position: absolute;
+  border: solid #414141;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 1px;
+  right: 1px;
+  width: 6px;
+  height: 6px;
+}
+span.arrow-icon:after {
+  content: "";
+  position: absolute;
+  background: #414141;
+  top: 4px;
+  right: 1px;
+  width: 9px;
+  height: 2px;
+}
+span.arrow-icon.white:before {
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+}
+span.arrow-icon.white:after {
+  background: #FFFFFF;
+}
+span.arrow-icon.left {
+  margin: 0 4px 0 0;
+}
+span.arrow-icon.right {
+  margin: 0 0 0 4px;
+}
+
+
+/* CARET ICON â€” <span class="caret-icon"> */
+span.caret-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  top: 0px;
+  left: 0px;
+  width: 5px;
+  height: 9px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  vertical-align: middle;
+}
+span.caret-icon:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #FFFFFF;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+}
+span.caret-icon.right {
+  margin: 0 0 0 6px;
+}
+span.caret-icon.left:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #FFFFFF;
+  border-left: 5px solid transparent;
+  top: 0px;
+  left: -6px;
+  width: 0px;
+  height: 0px;
+}
+span.caret-icon.left {
+  margin: 0 6px 0 0;
+}
+
+
+/* CLOSE ICON â€” <span class="close-icon"> */
+span.close-icon {
+  content: "";
+  position: relative;
+  background-color: #000000;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+span.close-icon:hover {
+  background-color: #1E82D7;
+}
+span.close-icon.left {
+  margin: 0 4px 0 0;
+}
+span.close-icon.right {
+  margin: 0 0 0 4px;
+}
+span.close-icon:before {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #FFFFFF;
+  top: 3px;
+  left: 7px;
+  width: 2px;
+  height: 10px;
+}
+span.close-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #FFFFFF;
+  top: 3px;
+  left: 7px;
+  width: 2px;
+  height: 10px;
+}
+
+
+/* CHAT ICON (Speech Bubble) â€” <span class="chat-icon"> */
+span.chat-icon {
+  content: "";
+  position: relative;
+  background-color: #1E82D7;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: baseline;
+}
+span.chat-icon.left {
+  margin: 0 4px 0 0;
+}
+span.chat-icon:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid #1E82D7;
+  border-left: 3px solid transparent;
+  bottom: -3px;
+  right: 4px;
+  width: 0px;
+  height: 0px;
+}
+span.chat-icon.white {
+  background-color: #FFFFFF;
+}
+span.chat-icon.white:after {
+  border-right: 3px solid #FFFFFF;
+}
+
+/* NONE ICON (Circle with a Strike-thru) â€” <span class="none-icon"> */
+span.none-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px solid red;
+  top: 2px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+span.none-icon.left {
+  margin: 0 5px 0 0;
+}
+span.none-icon.right {
+  margin: 0 0 0 5px;
+}
+span.none-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: red;
+  top: 0px;
+  left: 5px;
+  width: 2px;
+  height: 13px;
+}
+
+
+/* CHECKMARK ICON â€” <span class="checkmark-icon"> */
+span.check-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  top: 0px;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+span.check-icon.left {
+  margin: 0 4px 0 0;
+}
+span.check-icon.right {
+  margin: 0 0 0 4px;
+}
+span.check-icon:before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  -webkit-transform: rotate(37deg);
+  -moz-transform: rotate(37deg);
+  -ms-transform: rotate(37deg);
+  -o-transform: rotate(37deg);
+  transform: rotate(37deg);
+  border-color: #50A01E;
+  border-image: none;
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 10px;
+}
+
+
+/* X ICON â€” <span class="x-icon"> */
+span.x-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  top: 1px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+span.x-icon.left {
+  margin: 0 4px 0 0;
+}
+span.x-icon.right {
+  margin: 0 0 0 4px;
+}
+span.x-icon:before {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: red;
+  top: 2px;
+  left: 6px;
+  width: 3px;
+  height: 14px;
+}
+span.x-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: red;
+  top: 2px;
+  left: 6px;
+  width: 3px;
+  height: 14px;
+}
+
+
+/* DOWNLOAD ICON â€” <span class="download-icon"> */
+span.download-icon {
+  content: "";
+  position: relative;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+}
+span.download-icon.left {
+  margin-right: 5px;
+}
+span.download-icon:before {
+  content: "";
+  position: absolute;
+  border: solid #FFFFFF;
+  border-width: 0 0 2px 2px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 4px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+}
+span.download-icon:after {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 3px;
+  left: 7px;
+  width: 2px;
+  height: 7px;
+}
+span.download-icon > i {
+  content: "";
+  position: relative;
+  border: solid #FFFFFF;
+  border-width: 0 0 1px 0;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 12px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+
+
+/* MAGNIFY ICON â€” <span class="magnify-icon"> */
+span.magnify-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #1E82D7;
+  top: 3px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+span.magnify-icon.left {
+  margin: 0 8px 0 0;
+}
+span.magnify-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #1E82D7;
+  top: 5px;
+  left: 7px;
+  width: 2px;
+  height: 7px;
+}
+
+
+/* SEARCH ICON â€” <span class="search-icon"> */
+span.search-icon {
+  content: "";
+  position: relative;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #000000;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+}
+span.search-icon:hover {
+  background-color: #1E82D7;
+}
+span.search-icon.left {
+  margin: 0 5px 0 0;
+}
+span.search-icon.right {
+  margin: 0 5px 0 0;
+}
+span.search-icon:before {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+}
+span.search-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #FFFFFF;
+  top: 10px;
+  left: 13px;
+  width: 2px;
+  height: 8px;
+}
+
+
+/* EYE ICON â€” <span class="eye-icon"> */
+span.eye-icon {
+  content: "";
+  position: relative;
+  -webkit-border-radius: 1px 15px 1px 15px;
+  -moz-border-radius: 1px 15px 1px 15px;
+  border-radius: 1px 15px 1px 15px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #1E82D7;
+  top: 0px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-top;
+  overflow: hidden;
+}
+span.eye-icon.left {
+  margin: 0 6px 0 0;
+}
+span.eye-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  top: 2px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+}
+span.eye-icon.small {
+  content: "";
+  position: relative;
+  -webkit-border-radius: 1px 13px 1px 13px;
+  -moz-border-radius: 1px 13px 1px 13px;
+  border-radius: 1px 13px 1px 13px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #1E82D7;
+  top: 0px;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  vertical-align: text-bottom;
+  overflow: hidden;
+}
+span.eye-icon.small.left {
+  margin: 0 6px 0 0;
+}
+span.eye-icon.small:after {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+}
+
+
+/* IMAGE ICON â€” <span class="image-icon"> */
+span.image-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #1E82D7;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  top: 2px;
+  left: 0px;
+  width: 12px;
+  height: 11px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+  overflow: hidden;
+}
+span.image-icon.left {
+  margin: 0 5px 0 0;
+}
+span.image-icon.right {
+  margin: 0 0 0 5px;
+}
+span.image-icon:before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #1E82D7;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  bottom: 0px;
+  left: -1px;
+  width: 0px;
+  height: 0px;
+}
+span.image-icon:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid #1E82D7;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  bottom: 0px;
+  left: 3px;
+  width: 0px;
+  height: 0px;
+}
+span.image-icon > i {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  border: none 0;
+}
+
+
+/* USER ICON â€” <span class="user-icon"> */
+span.user-icon {
+  content: "";
+  position: relative;
+  background-color: transparent;
+  border: 2px solid #1E82D7;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  top: 2px;
+  left: 0px;
+  width: 12px;
+  height: 11px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+  overflow: hidden;
+}
+span.user-icon.left {
+  margin: 0 4px 0 0;
+}
+span.user-icon.right {
+  margin: 0 0 0 4px;
+}
+span.user-icon:before {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #1E82D7;
+  top: 7px;
+  left: 2px;
+  width: 8px;
+  height: 6px;
+}
+span.user-icon:after {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+}
+
+
+/* PINPOINT ICON â€” <span class="pinpoint-icon"> */
+span.pinpoint-icon {
+  content: "";
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-border-radius: 20px 20px 20px 0;
+  -moz-border-radius: 20px 20px 20px 0;
+  border-radius: 20px 20px 20px 0;
+  background-color: #1E82D7;
+  top: 0px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: baseline;
+}
+span.pinpoint-icon.left {
+  margin: 0 4px 0 0;
+}
+span.pinpoint-icon.right {
+  margin: 0 0 0 4px;
+}
+span.pinpoint-icon:after {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+}
+
+
+/* PLAY ICON (Tiny "playhead") â€” <span class="play-icon"> */
+span.play-icon {
+  content: "";
+  position: relative;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+}
+span.play-icon.left {
+  margin: 0 5px 0 0;
+}
+span.play-icon.right {
+  margin: 0 0 0 5px;
+}
+span.play-icon:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #FFFFFF;
+  bottom: 2px;
+  left: 6px;
+  width: 0px;
+  height: 0px;
+}
+
+
+/* VIDEO ICON (film strip) â€” <span class="video-icon"> */
+span.video-icon {
+  content: "";
+  position: relative;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+}
+span.video-icon.left {
+  margin: 0 5px 0 0;
+}
+span.video-icon.right {
+  margin: 0 0 0 5px;
+}
+span.video-icon:before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAMAAADarb8dAAAABlBMVEX///////9VfPVsAAAAAnRSTlP/AOW3MEoAAAAnSURBVHjatc0xCgAACELR3/0vXZEtzvVwEQQJQweZVpDTxfp88YVJQb4Ag3Z96AwAAAAASUVORK5CYII=');
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+}
+
+
+/* CODE ICON (film strip) â€” <span class="code-icon"> */
+span.code-icon {
+  content: "";
+  position: relative;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+}
+span.code-icon.left {
+  margin: 0 5px 0 0;
+}
+span.code-icon.right {
+  margin: 0 0 0 5px;
+}
+span.code-icon:before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOklEQVR42u3SIQ4AMAhD0d7/0h85V2hIZjZRgeClIQhY5SGAqwBmpgMIQWXLJ7gGEWr0WSN7+f/KsxTUig8cGk1NdAAAAABJRU5ErkJggg==');
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 8px;
+}
+
+
+/* PDF ICON (acrobat icon) â€” <span class="pdf-icon"> */
+span.pdf-icon {
+  content: "";
+  position: relative;
+  background-color: #1E82D7;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+}
+span.pdf-icon.left {
+  margin: 0 5px 0 0;
+}
+span.pdf-icon.right {
+  margin: 0 0 0 5px;
+}
+span.pdf-icon:before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnUlEQVR42r3TMQqCYBTAcZEGhwb3dvECbZ0gCVq9wneBRi/S4Ca0RItI8VXgIDq0OIitHqAjfP4PIELvo4bf+ufxeM8xxlj5WWCBFpk0ECJFIQ24yAH5Dh7QNoEdXjYBhQFbaUBjiRrrbwM+ShxwwwcdrtBQc4EN3qig4MHBEXck6KcCLk644DkzWYzVVOCMCA0CySk3qLH/+zNZGQGSiBiqHUfF5QAAAABJRU5ErkJggg==');
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+
+/* FORM ICON (film strip) â€” <span class="form-icon"> */
+span.form-icon {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI1JREFUeNpi0eh99J+BNMCIzGFhIA/ALWUiw/b3UJoR3QWMRBgA0iwAdQGGAf+JsFkAzTBGYl2ArvkDEAsS4wJGfJqJCQO8mvG5gBGLizA043OBAw7N/9FdyoTmApit+9EMEMQVS0xoLoCZ/gBKO+LwDt4wAGlQJCJt4MwLJGUuJgYKAeP///8pMgAgwADSHiH9e06xqAAAAABJRU5ErkJggg==') no-repeat scroll 0 0 transparent;
+  position: relative;
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  vertical-align: text-top;
+}
+span.form-icon.left {
+  margin: 0 5px 0 0;
+}
+span.form-icon.right {
+  margin: 0 0 0 5px;
+}

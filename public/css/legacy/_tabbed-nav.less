@@ -1,0 +1,89 @@
+/* ================================================================
+	Tabbed Navigation - relies on ../js/tabs.js
+================================================================ */
+
+.tabwrap {
+  background-color: transparent;
+  position: relative;
+  width: auto;
+  z-index: 20;
+  top: 1px;
+}
+div.tabcontentcontainer {
+  padding: 40px 0 0 0;
+  width: auto;
+  background-color: #FFFFFF;
+}
+div.tabcontentcontainer.dark {
+  background-color: transparent;
+}
+div.darkbackground {
+  background-color: #e4e4e4;
+  position: relative;
+  top: 0px;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 45px;
+}
+.tabs li {
+  list-style: none;
+  display: inline;
+  margin: 0 1px 0 0;
+  line-height: 100%;
+}
+.tabs a {
+  padding: 5px 15px 5px;
+  display: inline-block;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #d4d4d4;
+  color: #5c5c5c;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  cursor: pointer;
+  font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 100%;
+  border-top: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  border-bottom: 0 none;
+  border-left: 1px solid #d4d4d4;
+}
+.tabs.dark a {
+  background-color: transparent;
+  color: #5c5c5c;
+  border-top: 1px solid #D1D1D1;
+  border-right: 1px solid #D1D1D1;
+  border-bottom: 0 none;
+  border-left: 1px solid #D1D1D1;
+}
+.tabs a.active {
+  background-color: #FFFFFF;
+  color: #414141;
+  border-top: 1px solid #D1D1D1;
+  border-right: 1px solid #D1D1D1;
+  border-bottom: 0 none;
+  border-left: 1px solid #D1D1D1;
+}
+.tabs.dark a.active {
+  background-color: #e4e4e4;
+  color: #414141;
+  border-top: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  border-bottom: 0 none;
+  border-left: 1px solid #d4d4d4;
+}
+.tab-hr {
+  border-top: 1px solid #d4d4d4;
+  left: 0;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}

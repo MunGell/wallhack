@@ -1,0 +1,226 @@
+/* ================================================================
+	CALLOUTS: Block Quotes
+================================================================ */
+
+blockquote {
+  border: 0 none;
+  background-color: transparent;
+  font-family: Georgia, Times, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing:0;
+  margin: 0;
+  padding: 0;
+  line-height: 115%;
+  position: relative;
+  color: #6C6C6C;
+  text-transform:none;
+}
+blockquote.small {
+  font-size: 20px;
+}
+blockquote em {
+  color: #5C5C5C;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+  text-decoration: none;
+}
+blockquote sup {
+  bottom: .75ex;
+}
+blockquote sup:after {
+  content: "\2009";
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote cite {
+  color: #555555;
+  display: block;
+  font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing:.02em;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+
+/* ================================================================
+	CALLOUTS: Speech Bubble Quotes
+================================================================ */
+
+.quote {
+  border: 0 none;
+  font-size: 16px;
+  font-weight: normal;
+  line-height:140%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #E4E4E4;
+  padding: 25px;
+  margin: 0;
+}
+.quotepoint {
+  background-color: transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-left: 15px solid #E4E4E4;
+  font-size: 100%;
+  left: 40px;
+  position: relative;
+  height: 0;
+  width: 0;
+}
+.quote p:before {
+  content: "â€œ";
+}
+.quote p:after {
+  content: "â€";
+}
+.customername p {
+  font-size: 0.82em;
+  font-weight: normal;
+  line-height:100%;
+  text-transform: none;
+  padding: .25em 0 0 0;
+}
+.companyname p {
+  font-size: 10px;
+  font-weight: normal;
+  line-height:100%;
+  text-transform: none;
+  padding: .25em 0 0 0;
+}
+
+
+/* ================================================================
+	CALLOUTS: Citations
+================================================================ */
+
+.citation {
+  border: 1px solid #D1D1D1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #F9F9F9;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 1em 0;
+  padding: 1.75em;
+  line-height: 150%;
+  position: relative;
+  color: #6C6C6C;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.25);
+}
+.citation em {
+  color: #191919;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  text-decoration: none;
+}
+.citation sup {
+  bottom: .75ex;
+}
+.citation sup:after {
+  content: "\2009";
+}
+.citation p:last-child {
+  margin-bottom: 0;
+}
+.citation cite {
+  color: #555555;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing:.02em;
+  margin-top: 10px;
+  text-transform: uppercase;
+  line-height: 110%;
+  clear: both;
+}
+.citation cite:before {
+  content: "\2014 \2009";
+}
+
+
+/* ================================================================
+	CALLOUTS: Announcements / Alerts
+================================================================ */
+
+.announcementpop {
+  display: block;
+  list-style-type: none;
+  border: 1px solid #D1D1D1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  margin: 1em 0;
+  padding: 20px;
+  line-height: 150%;
+  position: relative;
+  color: #6C6C6C;
+  -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.45);
+}
+.announcementpop h5 {
+  padding: 0 25px 0 0;
+  margin: 0 0 5px 0;
+}
+.announcementpop p {
+  margin-bottom: 0;
+  padding: 0 25px 0 0;
+  font-size: 14px;
+  line-height: 130%;
+  font-style: italic;
+  font-family: "SourceSansProLight", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.announcementpop cite {
+  color: #555555;
+  display: block;
+  font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing:.02em;
+  line-height: 100%;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.announcementpop cite:before {
+  content: "\2014 \2009";
+}
+.announcementpop div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.announcementpop div img {
+  margin-right: 25px;
+  max-width: 120px;
+  vertical-align: top;
+}

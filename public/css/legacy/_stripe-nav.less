@@ -1,0 +1,67 @@
+/* ================================================================
+	Stripe Navigation  -  with/without CTA button
+================================================================ */
+
+.stripe {
+  background: none repeat scroll 0 0 #444444;
+  color: #FFFFFF;
+  position: relative;
+  margin: 0 auto;
+  z-index: 99;
+}
+.stripe-nav {
+  background: none repeat scroll 0 0 transparent;
+  margin: 0;
+}
+.stripe-nav .dropdown-menu-label {
+  display: none;
+}
+.stripe-nav ul {
+  margin: 0;
+  text-align: left;
+  vertical-align: middle;
+  padding: 0;
+  font-size: 0.82em;
+  line-height: 100%;
+}
+.stripe-nav li {
+  display: table-cell;
+  line-height: 100%;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.stripe-nav li:first-child {
+  border-left: none;
+}
+.stripe-nav li:last-child {
+  border-right: none;
+}
+.stripe-nav li.cta {
+  vertical-align: top;
+}
+.stripe-nav a:link, .stripe-nav a:visited {
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "SourceSansProRegular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 100%;
+  text-decoration: none;
+  padding: 16px 15px 14px;
+}
+.stripe-nav a:hover {
+  background: none no-repeat scroll left center padding-box rgba(0, 0, 0, 0.375);
+}
+.stripe-nav a:active {
+  background: none no-repeat scroll left center padding-box rgba(0, 0, 0, 0.375);
+}
+.stripe-nav .active a {
+  text-decoration: none;
+  background: none no-repeat scroll left center padding-box rgba(0, 0, 0, 0.25);
+}
+.stripe-nav li a.btn {
+  display: inline;
+  position: absolute;
+  right: 0px;
+  margin: 6px 0 0 0;
+}
