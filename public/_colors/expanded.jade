@@ -1,0 +1,31 @@
+.hspace80
+hr
+#expanded.hspace80
+.content
+    .container.clearfix
+        .col-1of1
+            h3.head28 Expanding the Palette
+            p.text16 We use black and the entire gamut of grays to compliment red where it's needed. You can feel free to alter red by tinting it with black for richer colors and more dynamic layouts.
+        .hspace50
+        .col-1of1
+            h4.lite.caps
+                span.head20 Red
+                span.head14  (Getting Darker)
+            .hspace5
+            each color in expanded.redset
+                .col-1of10
+                    .color-swatch.white(style="background-color: #{ color };") #{ color }
+        .hspace40
+        .col-1of1
+            h4.lite.caps
+                span.head20 Black
+                span.head14  (Getting Lighter)
+            .hspace5
+            - var blackCounter = 0;
+            each color in expanded.blackset
+                - blackCounter++
+                .col-1of10
+                    if blackCounter > 10
+                        .color-swatch(style="background-color: #{ color };") #{ color }
+                    else
+                        .color-swatch.white(style="background-color: #{ color };") #{ color }
