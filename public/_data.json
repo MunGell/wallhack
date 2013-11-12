@@ -1,4 +1,8 @@
 {
+    "grid": {
+        "layout": "_legacy-layout",
+        "title": "Grid"
+    },
     "typography": {
         "layout": "_legacy-layout",
         "title": "Typography",
