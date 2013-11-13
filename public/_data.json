@@ -1,10 +1,8 @@
 {
-    "grid": {
-        "layout": "_legacy-layout",
-        "title": "Grid"
+    "index:": {
+        "title": "Cornerstone"
     },
     "typography": {
-        "layout": "_legacy-layout",
         "title": "Typography",
         "size_chart": {
             "tabledata": {
@@ -20,11 +18,12 @@
         }
     },
     "colors": {
-        "layout": "_legacy-layout",
         "title": "Colors"
     },
     "components": {
-        "layout": "_legacy-layout",
         "title": "Components"
+    },
+    "grid": {
+        "title": "Grid"
     }
 }

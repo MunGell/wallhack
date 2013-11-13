@@ -1,8 +1,8 @@
 != partial("_shared/nav")
-!= partial("_shared/hero", { title: "Grid" })
-!= partial("_shared/subnav", { menu: [ { url: "#test", title: "Test" } ] })
+!= partial("_shared/legacy/hero", { title: "Grid" })
 
 div.grid-container
+    .hspace60
     h3 Responsive grid system
     p
         | Grid helps developers to build responsive layouts with less efforts providing column-based responsive blocks.
@@ -10,6 +10,7 @@ div.grid-container
         | The number of columns could be changes in <code>_variables.less</code> file as well as gutter and grid breakpoint sizes.
         | By default grid consists of 12 columns which will stack into one column on mobile screen size (less than 720px) with 30px gutter.
         | This text needs editor to make it clean and tidy.
+    .hspace60
     div.grid-row.grid-presentation
         div.grid-1 .grid-1
         div.grid-1 .grid-1
