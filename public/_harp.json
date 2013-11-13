@@ -10,6 +10,10 @@
 				"alias": "grid",
 				"title": "Grid"
 			},
+            {
+                "alias": "columns",
+                "title": "Columns"
+            },
 			{
 				"alias": "colors",
 				"title": "Colors"

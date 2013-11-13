@@ -25,5 +25,8 @@
     },
     "grid": {
         "title": "Grid"
+    },
+    "columns": {
+        "title": "Columns"
     }
 }
