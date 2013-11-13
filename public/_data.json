@@ -22,5 +22,9 @@
     "colors": {
         "layout": "_legacy-layout",
         "title": "Colors"
+    },
+    "components": {
+        "layout": "_legacy-layout",
+        "title": "Components"
     }
 }
